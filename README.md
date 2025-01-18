@@ -31,3 +31,10 @@ remove branch when its legacy: git branch -d ~name of branch~
 local merging is done to keep the user up to date. not the team. example, touching up the current feature with the most up to date master branch
 merging the feature branch into the master branch locally: git merge master
 deconflict the lines of codes directly in code editor after merge
+
+# Undoing 
+unstaging changes (reseting): git reset ~optional name of file~
+undoing a commit: git reset HEAD~1 ("HEAD" is a pointer to the last commit. ~1 means to jump 1 additonal previous commit)
+view logs of commit: git log
+to return to a unstaged version of a specific commit log: git reset ~hash of commit from the log~
+return to the inital version of a commit version: git reset --hard ~has of commit from the log~
