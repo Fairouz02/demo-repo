@@ -2,10 +2,32 @@
 
 delete once done
 
-## Heading
+# End of tutorial keynotes
 
-Trying first commit
+# Cloning Repo until pushing commit up to Github
+clone repo from github: git clone ~ssh~
+adding a new file that was not a part of the commit: git add . or git add ~name of file~
+comitting: git commit -m "Message" -m "Optional Desc"
+combining add and commit: git commit -am "Message"
+pushing commit to github: git push origin ~name of branch~
 
-## Heading
+# Pushing folder created locally to github
+initialise the created folder: git init
+continue with the folder until ready to push to github repo
+create repository in github and add folder. get the repo ssh.
+connect the local folder and online repo: git remote add origin ~repo ssh~
+push the folder into the online repo
 
-Working on a branching
+# Branch
+create branch: git checkout -b ~name of branch~
+navigate branch: git checkout ~name of branch~ 
+current branch: git branch
+pushing to github a branch that was created locally: git push -u origin ~name of branch~
+after pushing branch on github, merge the codes in github
+once merged, pull the updated codes from master branch by executing: git pull
+remove branch when its legacy: git branch -d ~name of branch~
+
+# Merging Locally
+local merging is done to keep the user up to date. not the team. example, touching up the current feature with the most up to date master branch
+merge locally: git merge master
+deconflict the lines of codes directly in code editor after merge
