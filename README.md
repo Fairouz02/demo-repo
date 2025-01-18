@@ -29,5 +29,5 @@ remove branch when its legacy: git branch -d ~name of branch~
 
 # Merging Locally
 local merging is done to keep the user up to date. not the team. example, touching up the current feature with the most up to date master branch
-merge locally: git merge master
+merging the feature branch into the master branch locally: git merge master
 deconflict the lines of codes directly in code editor after merge
